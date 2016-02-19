@@ -1,0 +1,70 @@
+<div class="panel panel-primary" ng-controller="SignupCtrl">
+    <div class="panel-heading">Signup</div>
+    <div class="panel-body" style="background: url('../Image/20151105_092352.jpg')">
+        <form class="form-horizontal" role="form" name="signupForm" ng-submit="signup()" formnovalidate>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fName">
+                    <nobr>First name:</nobr>
+                </label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fName" placeholder="Enter first name"
+                           ng-model="user.fName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lName">
+                    <nobr>Last name:</nobr>
+                </label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lName" placeholder="Enter last name"
+                           ng-model="user.lName">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="user.email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                           ng-model="user.password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Confirm Password:</label>
+
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd1" placeholder="Confirm password"
+                           ng-model="user.cPassword">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Date Of Birth:</label>
+
+                <div class="control-label col-sm-2">
+                    <input type="date" ng-model="user.dob">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox" ng-model="user.rememberMe"> I agree to the<a href="#"> terms and
+                            conditions</a> </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-right">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Signup me now</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

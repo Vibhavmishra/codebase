@@ -1,0 +1,22 @@
+{
+  "name": "login",
+  "description": "This is sample log in applicartion",
+  "main": "index.js",
+  "authors": [
+    "Vibhav Mishra"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "bootstrap": "~3.3.6"
+  }
+}
